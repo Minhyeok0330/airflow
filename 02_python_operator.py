@@ -3,10 +3,10 @@ from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
 
 def hello():
-    pass
+    print('hello world')
 
 def bye():
-    pass
+    print('bye...')
 
 with DAG(
     dag_id='02_python',
