@@ -37,3 +37,5 @@ with DAG(
         task_id = 'review_generate',
         python_callable = generate_random_review
     )
+
+    t1

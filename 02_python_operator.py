@@ -17,10 +17,12 @@ with DAG(
 ) as dag:
     t1 = PythonOperator(
         task_id = 'hello',
-        python_collable = hello 
+        python_callable = hello 
     )
 
     t2 = PythonOperator(
         task_id = 'bye',
-        python_collable = bye
+        python_callable = bye
     )
+
+    t1 >> t2
